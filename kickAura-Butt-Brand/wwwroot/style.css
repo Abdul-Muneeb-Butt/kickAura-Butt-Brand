@@ -26,3 +26,140 @@ body {
     color: var(--charcoal);
     overflow-x: hidden;
 }
+* ───── UTILITIES ───── */
+.section-pad {
+    padding: 5rem 0;
+}
+
+.bg-cream {
+    background: var(--cream);
+}
+
+.bg-white {
+    background: var(--warm-white);
+}
+
+/* ───── PROMO BANNER ───── */
+.promo-banner {
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+    padding: 0.55rem 1rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.3px;
+}
+
+    .promo-banner span {
+        color: var(--accent-light);
+        font-weight: 700;
+    }
+
+/* ───── NAVBAR ───── */
+.navbar-custom {
+    background: var(--warm-white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--dark) !important;
+    letter-spacing: -1px;
+}
+
+    .navbar-brand span {
+        color: var(--accent);
+    }
+
+.nav-link {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--charcoal) !important;
+    letter-spacing: 0.5px;
+    padding: 1.4rem 1rem !important;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+    .nav-link:hover, .nav-link:focus {
+        color: var(--accent) !important;
+    }
+
+.nav-sale {
+    color: var(--accent) !important;
+}
+
+.dropdown-item {
+    font-size: 0.88rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    color: var(--charcoal);
+}
+
+    .dropdown-item:hover {
+        background: rgba(232,82,26,0.07);
+        color: var(--accent);
+    }
+
+.search-wrap {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.search-bar {
+    background: var(--cream);
+    border: 1.5px solid var(--border);
+    border-radius: 30px;
+    padding: 0.45rem 1.2rem 0.45rem 2.2rem;
+    font-size: 0.85rem;
+    width: 240px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+    .search-bar:focus {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(232,82,26,0.1);
+    }
+
+.nav-icons a {
+    color: var(--charcoal);
+    font-size: 1.05rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    transition: color 0.2s;
+    position: relative;
+}
+
+    .nav-icons a:hover {
+        color: var(--accent);
+    }
+
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.58rem;
+    font-weight: 700;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
