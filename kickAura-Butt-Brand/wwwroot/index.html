@@ -608,5 +608,16 @@
                 this.classList.add('active');
             });
         });
+        // Live countdown
+        (function () {
+            let h = 8, m = 42, s = 17;
+            setInterval(() => {
+                s--; if (s < 0) { s = 59; m--; } if (m < 0) { m = 59; h--; } if (h < 0) h = 23;
+                document.getElementById('cd-h').textContent = String(h).padStart(2, '0');
+                document.getElementById('cd-m').textContent = String(m).padStart(2, '0');
+                document.getElementById('cd-s').textContent = String(s).padStart(2, '0');
+            }, 1000);
+        })();
+    </script>
 </body >
 </html >
