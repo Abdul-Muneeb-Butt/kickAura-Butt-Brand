@@ -575,5 +575,38 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+    <!-- TOAST -->
+    <div class="toast-msg" id="toastMsg">🛍️ Added to your bag!</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleWish(btn) {
+            const i = btn.querySelector('i');
+            i.classList.toggle('far');
+            i.classList.toggle('fas');
+            btn.classList.toggle('wished');
+        }
+
+        function addToBag(btn) {
+            btn.textContent = '✓ Added!';
+            btn.style.background = '#2D6A4F';
+            btn.disabled = true;
+            const toast = document.getElementById('toastMsg');
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
+            setTimeout(() => { btn.textContent = 'Add to Bag'; btn.style.background = ''; btn.disabled = false; }, 2000);
+        }
+
+        function setActive(el) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            el.classList.add('active');
+        }
+
+        document.querySelectorAll('.color-dot').forEach(dot => {
+            dot.addEventListener('click', function () {
+                this.closest('.color-dots').querySelectorAll('.color-dot').forEach(d => d.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+</body >
+</html >
