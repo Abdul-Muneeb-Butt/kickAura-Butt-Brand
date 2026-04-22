@@ -506,29 +506,29 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script>
-  // Wishlist toggle
-  document.querySelectorAll('.wishlist-btn').forEach(btn => {
-    btn.addEventListener('click', e => {
-      e.stopPropagation();
-      const icon = btn.querySelector('i');
-      icon.classList.toggle('far');
-      icon.classList.toggle('fas');
-      btn.style.color = icon.classList.contains('fas') ? '#E8521A' : '';
-    });
-  });
+        // Wishlist toggle
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.stopPropagation();
+                const icon = btn.querySelector('i');
+                icon.classList.toggle('far');
+                icon.classList.toggle('fas');
+                btn.style.color = icon.classList.contains('fas') ? '#E8521A' : '';
+            });
+        });
 
-  // Add to bag animation
-  document.querySelectorAll('.add-cart-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-      const orig = this.textContent;
-      this.textContent = '✓ Added!';
-      this.style.background = '#2D6A4F';
-      setTimeout(() => {
-        this.textContent = orig;
-        this.style.background = '';
-      }, 1500);
-    });
-  });
+        // Add to bag animation
+        document.querySelectorAll('.add-cart-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const orig = this.textContent;
+                this.textContent = '✓ Added!';
+                this.style.background = '#2D6A4F';
+                setTimeout(() => {
+                    this.textContent = orig;
+                    this.style.background = '';
+                }, 1500);
+            });
+        });
     </script>
 </body>
 </html>
