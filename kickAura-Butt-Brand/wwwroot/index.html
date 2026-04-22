@@ -3,621 +3,751 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STRYDE – Premium Footwear</title>
+    <title>KickAura – Shoes, Clothes & More</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- PROMO BANNER -->
-    <div class="promo-banner">
-        🎉 Free Shipping on orders over <span>$50</span> &nbsp;·&nbsp; Use code <span>STRYDE10</span> for 10% off &nbsp;·&nbsp; <span>365-Day Free Returns</span>
-    </div>
+    <!-- ═══════════════════════════════════════
+         TOP NAVBAR  (Zappos style: logo + search + icons)
+    ═══════════════════════════════════════ -->
+    <header class="site-header">
+        <div class="header-top">
+            <a class="site-logo" href="#">KickAura</a>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid px-4">
-            <a class="navbar-brand" href="#">STRY<span>DE</span></a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Men</a>
-                        <ul class="dropdown-menu border-0 shadow-lg p-3" style="min-width:200px">
-                            <li><a class="dropdown-item rounded" href="#">Sneakers</a></li>
-                            <li><a class="dropdown-item rounded" href="#">Running</a></li>
-                            <li><a class="dropdown-item rounded" href="#">Boots</a></li>
-                            <li><a class="dropdown-item rounded" href="#">Sandals</a></li>
-                            <li><a class="dropdown-item rounded" href="#">Formal</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Women</a>
-                        <ul class="dropdown-menu border-0 shadow-lg p-3" style="min-width:200px">
-                            <li><a class="dropdown-item rounded" href="#">Heels</a></li>
-                            <li><a class="dropdown-item rounded" href="#">Flats</a></li>
-                            <li><a class="dropdown-item rounded" href="#">Sneakers</a></li>
-                            <li><a class="dropdown-item rounded" href="#">Boots</a></li>
-                            <li><a class="dropdown-item rounded" href="#">Sandals</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Brands</a></li>
-                    <li class="nav-item"><a class="nav-link nav-sale" href="#">Sale 🔥</a></li>
-                </ul>
-                <div class="d-flex align-items-center gap-3">
-                    <div class="search-wrap">
-                        <i class="fas fa-search search-icon"></i>
-                        <input class="search-bar" type="text" placeholder="Search shoes, brands..." />
-                    </div>
-                    <div class="nav-icons d-flex align-items-center">
-                        <a href="#" title="Wishlist"><i class="far fa-heart"></i></a>
-                        <a href="#" title="Cart" style="position:relative">
-                            <i class="fas fa-shopping-bag"></i>
-                            <span class="cart-badge">3</span>
-                        </a>
-                        <a href="#" title="Account"><i class="far fa-user"></i></a>
-                    </div>
-                </div>
+            <div class="header-search">
+                <i class="fas fa-search search-ico"></i>
+                <input type="text" placeholder="Search for shoes, clothes, etc." />
+                <button class="search-btn">SEARCH</button>
+            </div>
+
+            <div class="header-actions">
+                <a href="#" title="Account"><i class="far fa-user-circle"></i></a>
+                <a href="#" title="Cart"><i class="fas fa-shopping-bag"></i></a>
             </div>
         </div>
-    </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-left">
-            <div class="hero-eyebrow">✦ New Season 2025 Collection</div>
-            <h1 class="hero-title">Step Into<br><em>Bold</em> New<br>Worlds</h1>
-            <p class="hero-desc">Discover footwear crafted for those who refuse to stand still. Premium comfort meets uncompromising style.</p>
-            <div class="hero-btns">
-                <a href="#" class="btn-hero">Shop Now →</a>
-                <a href="#" class="btn-hero-ghost">View Lookbook</a>
+        <!-- SUB-NAV -->
+        <nav class="header-nav">
+            <div class="nav-links">
+                <a href="#">Women</a>
+                <a href="#">Men</a>
+                <a href="#">Kids</a>
+                <a href="#">Brands</a>
+                <a href="#">Sneakers</a>
+                <a href="#">Sports</a>
+                <a href="#" class="nav-sale">Sale</a>
             </div>
-            <div class="hero-stats">
-                <div class="stat"><span class="stat-num">50K+</span><span class="stat-lbl">Happy Customers</span></div>
-                <div class="stat-divider"></div>
-                <div class="stat"><span class="stat-num">200+</span><span class="stat-lbl">Top Brands</span></div>
-                <div class="stat-divider"></div>
-                <div class="stat"><span class="stat-num">365</span><span class="stat-lbl">Day Returns</span></div>
+            <a href="#" class="nav-help">Help &amp; Support</a>
+        </nav>
+    </header>
+
+    <!-- ═══════════════════════════════════════
+         HERO BANNER – "Boston Bound" (Image 1)
+    ═══════════════════════════════════════ -->
+    <section class="hero-banner">
+        <!-- scrolling ticker -->
+        <div class="hero-ticker">
+            <div class="ticker-track">
+                <span>KickAura / In Motion</span><span>KickAura / In Motion</span>
+                <span>KickAura / In Motion</span><span>KickAura / In Motion</span>
+                <span>KickAura / In Motion</span><span>KickAura / In Motion</span>
+                <span>KickAura / In Motion</span><span>KickAura / In Motion</span>
             </div>
         </div>
-        <div class="hero-right">
-            <div class="hero-img-bg">
-                <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=900"
-                     onerror="this.src='https://placehold.co/900x700/F0EAE0/E8521A?text=Premium+Shoes'"
-                     alt="Hero Shoe" />
+
+        <div class="hero-img-wrap">
+            <img src="https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                 onerror="this.src='https://placehold.co/1600x700/1a1a1a/FFE234?text=Ready+For+Race+Day'" alt="Hero" />
+            <div class="hero-content">
+                <p class="hero-eyebrow">READY FOR RACE DAY</p>
+                <h1 class="hero-title">Born <span>to</span><br>Run</h1>
+                <p class="hero-sub">Get inspired by the best runners as they compete in their hometown race.</p>
+                <a href="#" class="hero-cta">SHOP THEIR PICKS</a>
             </div>
-            <div class="hero-tag">
-                <div class="tag-label">⭐ Featured Drop</div>
-                <div class="tag-name">Nike Air Max 270</div>
-                <div class="tag-price">$189.99 <span class="tag-old">$229</span></div>
-            </div>
-            <div class="hero-badge">NEW IN</div>
         </div>
     </section>
-    <!-- FEATURES STRIP -->
-    <div class="features-strip">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-6 col-md-3">
-                    <div class="feature-item">
-                        <div class="feature-icon"><i class="fas fa-truck-fast"></i></div>
-                        <div><h6>Free Shipping</h6><p>On all orders over $50</p></div>
+
+    <!-- ═══════════════════════════════════════
+         MILE-READY BRANDS (Image 2)
+    ═══════════════════════════════════════ -->
+    <section class="section-white py-5">
+        <div class="container-xl">
+            <h2 class="zap-h2">Mile-Ready Brands</h2>
+            <div class="brand-photo-row">
+
+                <a href="#" class="brand-photo-item">
+                    <div class="brand-photo-img" style="background:#e8e8e8;">
+                        <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/260x200/e8e8e8/333?text=HOKA'" alt="HOKA" />
                     </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="feature-item">
-                        <div class="feature-icon"><i class="fas fa-rotate-left"></i></div>
-                        <div><h6>365-Day Returns</h6><p>No questions asked</p></div>
+                    <span>HOKA</span>
+                </a>
+
+                <a href="#" class="brand-photo-item">
+                    <div class="brand-photo-img" style="background:#e8e8e8;">
+                        <img src="https://images.pexels.com/photos/1456705/pexels-photo-1456705.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/260x200/e8e8e8/333?text=Nike'" alt="Nike" />
                     </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="feature-item">
-                        <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
-                        <div><h6>100% Authentic</h6><p>All products verified</p></div>
+                    <span>Nike</span>
+                </a>
+
+                <a href="#" class="brand-photo-item">
+                    <div class="brand-photo-img" style="background:#e8e8e8;">
+                        <img src="https://images.pexels.com/photos/1103828/pexels-photo-1103828.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/260x200/e8e8e8/333?text=Brooks'" alt="Brooks" />
                     </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="feature-item">
-                        <div class="feature-icon"><i class="fas fa-headset"></i></div>
-                        <div><h6>24/7 Support</h6><p>Real humans, always</p></div>
+                    <span>Brooks</span>
+                </a>
+
+                <a href="#" class="brand-photo-item">
+                    <div class="brand-photo-img" style="background:#e8e8e8;">
+                        <img src="https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/260x200/e8e8e8/333?text=On'" alt="On" />
                     </div>
-                </div>
+                    <span>On</span>
+                </a>
+
+                <a href="#" class="brand-photo-item">
+                    <div class="brand-photo-img" style="background:#e8e8e8;">
+                        <img src="https://images.pexels.com/photos/1280064/pexels-photo-1280064.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/260x200/e8e8e8/333?text=New+Balance'" alt="New Balance" />
+                    </div>
+                    <span>New Balance</span>
+                </a>
+
+                <a href="#" class="brand-photo-item">
+                    <div class="brand-photo-img" style="background:#e8e8e8;">
+                        <img src="https://images.pexels.com/photos/1580283/pexels-photo-1580283.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/260x200/e8e8e8/333?text=ASICS'" alt="ASICS" />
+                    </div>
+                    <span>ASICS</span>
+                </a>
+
             </div>
         </div>
-    </div>
-    <!-- CATEGORIES -->
-    <section class="section-pad bg-cream">
-        <div class="container">
-            <div class="section-header">
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         EARTH TONES PROMO BANNER (Image 3)
+    ═══════════════════════════════════════ -->
+    <section class="promo-wide" style="background:#D9E4EE;">
+        <div class="promo-wide-img">
+            <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                 onerror="this.src='https://placehold.co/1400x420/D9E4EE/1a3a5c?text=Earth+Tones'" alt="Earth Tones" />
+        </div>
+        <div class="promo-wide-text">
+            <h2>Earth<br>Tones</h2>
+            <p>Inspired by nature. Rooted in the moment.</p>
+            <a href="#" class="btn-dark-solid">SHOP NOW</a>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         APRIL CALLS FOR (Image 4) — 5-col grid
+    ═══════════════════════════════════════ -->
+    <section class="section-white py-5">
+        <div class="container-xl">
+            <h2 class="zap-h2">April Calls For</h2>
+            <div class="five-col-grid">
+
+                <a href="#" class="five-col-item">
+                    <div class="five-img" style="background:#c8d8a0;">
+                        <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/280x320/c8d8a0/333?text=Spring'" alt="Spring Occasions" />
+                    </div>
+                    <span>Spring Occasions</span>
+                </a>
+
+                <a href="#" class="five-col-item">
+                    <div class="five-img" style="background:#F4C07A;">
+                        <img src="https://images.pexels.com/photos/2562992/pexels-photo-2562992.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/280x320/F4C07A/333?text=Vacation'" alt="Vacation Mode" />
+                    </div>
+                    <span>Vacation Mode</span>
+                </a>
+
+                <a href="#" class="five-col-item">
+                    <div class="five-img" style="background:#888;">
+                        <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/280x320/888/fff?text=Mile+Makers'" alt="Mile Makers" />
+                    </div>
+                    <span>Mile Makers</span>
+                </a>
+
+                <a href="#" class="five-col-item">
+                    <div class="five-img" style="background:#D4C5A0;">
+                        <img src="https://images.pexels.com/photos/1070058/pexels-photo-1070058.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/280x320/D4C5A0/333?text=Everyday'" alt="Everyday Ease" />
+                    </div>
+                    <span>Everyday Ease</span>
+                </a>
+
+                <a href="#" class="five-col-item">
+                    <div class="five-img" style="background:#5bb8a0;">
+                        <img src="https://images.pexels.com/photos/1352985/pexels-photo-1352985.jpeg?auto=compress&cs=tinysrgb&w=300"
+                             onerror="this.src='https://placehold.co/280x320/5bb8a0/fff?text=Playground'" alt="Playground Energy" />
+                    </div>
+                    <span>Playground Energy</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         WALKING ON SUNSHINE – FULL BANNER (Image 5)
+    ═══════════════════════════════════════ -->
+    <section class="promo-center-banner" style="background:#F5C842;">
+        <div class="promo-center-img">
+            <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                 onerror="this.src='https://placehold.co/1600x480/F5C842/1a1a1a?text=Walking+on+Sunshine'" alt="Summer Sandals" />
+        </div>
+        <div class="promo-center-text">
+            <h2>Walking on Sunshine</h2>
+            <p>Airy pairs for all your plans—sandal season starts here.</p>
+            <a href="#" class="btn-orange-solid">SHOP NOW</a>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         MOTHER'S DAY EDIT (Image 6) — 4-col
+    ═══════════════════════════════════════ -->
+    <section class="section-white py-5">
+        <div class="container-xl">
+            <h2 class="zap-h2">The Mother's Day Edit</h2>
+            <div class="four-col-grid">
+
+                <a href="#" class="four-col-item">
+                    <div class="four-img" style="background:#d8cfc0;">
+                        <img src="https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x360/d8cfc0/333?text=Fitness+Fan'" alt="Fitness Fan" />
+                    </div>
+                    <span>The Fitness Fan</span>
+                </a>
+
+                <a href="#" class="four-col-item">
+                    <div class="four-img" style="background:#b8a090;">
+                        <img src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x360/b8a090/fff?text=Mindful+Mover'" alt="Mindful Mover" />
+                    </div>
+                    <span>The Mindful Mover</span>
+                </a>
+
+                <a href="#" class="four-col-item">
+                    <div class="four-img" style="background:#e0d0c0;">
+                        <img src="https://images.pexels.com/photos/3782786/pexels-photo-3782786.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x360/e0d0c0/333?text=Fashion+Lover'" alt="Fashion Lover" />
+                    </div>
+                    <span>The Fashion Lover</span>
+                </a>
+
+                <a href="#" class="four-col-item">
+                    <div class="four-img" style="background:#e8dfd0;">
+                        <img src="https://images.pexels.com/photos/3807571/pexels-photo-3807571.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x360/e8dfd0/333?text=Comfort+Seeker'" alt="Comfort Seeker" />
+                    </div>
+                    <span>The Comfort Seeker</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FEATURED PRODUCT BANNER – Nike (Image 7)
+    ═══════════════════════════════════════ -->
+    <section class="feature-banner" style="background:#2a2a2a;">
+        <div class="feature-banner-img">
+            <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                 onerror="this.src='https://placehold.co/1400x380/2a2a2a/FFE234?text=Nike+Free+Metcon+7'" alt="Nike Metcon" />
+        </div>
+        <div class="feature-banner-text">
+            <span class="feature-banner-tag">NEW HEAT</span>
+            <h2>NIKE / FREE METCON 7</h2>
+            <p>Built for versatile training from dynamic to strength-based movements.</p>
+            <a href="#" class="btn-yellow-solid">SHOP NOW</a>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         OUTDOOR MODE: ON (Image 8) — 3-col
+    ═══════════════════════════════════════ -->
+    <section class="section-white py-5">
+        <div class="container-xl">
+            <h2 class="zap-h2">Outdoor Mode: On</h2>
+            <div class="three-col-grid">
+
+                <a href="#" class="three-col-item">
+                    <img src="https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=600"
+                         onerror="this.src='https://placehold.co/480x380/c8d8b0/333?text=Golf'" alt="Golf" />
+                    <span>Golf</span>
+                </a>
+
+                <a href="#" class="three-col-item">
+                    <img src="https://images.pexels.com/photos/1456705/pexels-photo-1456705.jpeg?auto=compress&cs=tinysrgb&w=600"
+                         onerror="this.src='https://placehold.co/480x380/a0c0c8/333?text=Tennis'" alt="Tennis" />
+                    <span>Tennis</span>
+                </a>
+
+                <a href="#" class="three-col-item">
+                    <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=600"
+                         onerror="this.src='https://placehold.co/480x380/c0a880/333?text=Trail'" alt="Trail Running" />
+                    <span>Trail Running</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         RECOVERY SANDALS – PRODUCT CARDS (Image 10 & 12)
+         Zappos exact card style: grey bg, swatches, brand/name/gender/price/stars
+    ═══════════════════════════════════════ -->
+    <section class="section-white py-5">
+        <div class="container-xl">
+            <h2 class="zap-h2">Recovery Sandals</h2>
+            <div class="zap-product-row">
+
+                <!-- Card 1 -->
+                <div class="zap-card">
+                    <div class="zap-card-img">
+                        <span class="zap-badge">Best Seller <span class="badge-slash">/</span></span>
+                        <button class="zap-wish"><i class="far fa-heart"></i></button>
+                        <img src="https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x280/f0f0f0/333?text=Hoka+Slide'" alt="Hoka Ora" />
+                    </div>
+                    <div class="zap-swatches">
+                        <span class="sw" style="background:#222;"></span>
+                        <span class="sw" style="background:#e8b0c0;"></span>
+                        <span class="sw" style="background:#d4b896;"></span>
+                        <span class="sw" style="background:#c0c8d0;"></span>
+                        <span class="sw" style="background:#fff;border:1px solid #ccc;"></span>
+                        <span class="sw-more">+3</span>
+                    </div>
+                    <div class="zap-card-info">
+                        <p class="zap-brand">Hoka</p>
+                        <p class="zap-name">Ora Recovery Slide 3</p>
+                        <p class="zap-gender">Unisex</p>
+                        <div class="zap-price-row">
+                            <span class="zap-price">$60</span>
+                        </div>
+                        <div class="zap-stars">
+                            ★★★★<span style="color:#ccc;">★</span>
+                            <span class="zap-reviews">(4,066)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="zap-card">
+                    <div class="zap-card-img">
+                        <span class="zap-badge">Best Seller <span class="badge-slash">/</span></span>
+                        <button class="zap-wish"><i class="far fa-heart"></i></button>
+                        <img src="https://images.pexels.com/photos/1580283/pexels-photo-1580283.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x280/f0f0f0/333?text=Birkenstock'" alt="Birkenstock Arizona" />
+                    </div>
+                    <div class="zap-swatches">
+                        <span class="sw" style="background:#c8b090;"></span>
+                        <span class="sw" style="background:#222;"></span>
+                        <span class="sw" style="background:#808080;"></span>
+                        <span class="sw" style="background:#704020;"></span>
+                    </div>
+                    <div class="zap-card-info">
+                        <p class="zap-brand">Birkenstock</p>
+                        <p class="zap-name">Arizona Soft Footbed - Suede (Unisex)</p>
+                        <p class="zap-gender">Unisex</p>
+                        <div class="zap-price-row">
+                            <span class="zap-price">$154.95</span>
+                        </div>
+                        <div class="zap-stars">
+                            ★★★★<span style="color:#ccc;">★</span>
+                            <span class="zap-reviews">(2,395)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="zap-card">
+                    <div class="zap-card-img">
+                        <span class="zap-badge">Best Seller <span class="badge-slash">/</span></span>
+                        <button class="zap-wish"><i class="far fa-heart"></i></button>
+                        <img src="https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x280/f0f0f0/333?text=OOFOS'" alt="OOFOS" />
+                    </div>
+                    <div class="zap-swatches">
+                        <span class="sw" style="background:#404040;"></span>
+                        <span class="sw" style="background:#8a9a70;"></span>
+                        <span class="sw" style="background:#708090;"></span>
+                        <span class="sw" style="background:#c07060;"></span>
+                        <span class="sw" style="background:#203060;"></span>
+                    </div>
+                    <div class="zap-card-info">
+                        <p class="zap-brand">OOFOS</p>
+                        <p class="zap-name">OOriginal Sandal</p>
+                        <p class="zap-gender">Unisex</p>
+                        <div class="zap-price-row">
+                            <span class="zap-price">$59.95</span>
+                        </div>
+                        <div class="zap-stars">
+                            ★★★★★
+                            <span class="zap-reviews">(6,301)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="zap-card">
+                    <div class="zap-card-img">
+                        <button class="zap-wish"><i class="far fa-heart"></i></button>
+                        <img src="https://images.pexels.com/photos/1070058/pexels-photo-1070058.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x280/f0f0f0/333?text=Birkenstock+Mayari'" alt="Birkenstock Mayari" />
+                    </div>
+                    <div class="zap-swatches">
+                        <span class="sw" style="background:#806040;"></span>
+                        <span class="sw" style="background:#c0a878;"></span>
+                        <span class="sw" style="background:#d4b896;"></span>
+                        <span class="sw" style="background:#606060;"></span>
+                        <span class="sw" style="background:#904030;"></span>
+                    </div>
+                    <div class="zap-card-info">
+                        <p class="zap-brand">Birkenstock</p>
+                        <p class="zap-name">Mayari - Birko-Flor™ &amp; Birkibuc™</p>
+                        <p class="zap-gender">Women's</p>
+                        <div class="zap-price-row">
+                            <span class="zap-price">$112.95</span>
+                        </div>
+                        <div class="zap-stars">
+                            ★★★★★
+                            <span class="zap-reviews">(5,870)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="zap-card">
+                    <div class="zap-card-img">
+                        <span class="zap-badge">Best Seller <span class="badge-slash">/</span></span>
+                        <button class="zap-wish"><i class="far fa-heart"></i></button>
+                        <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x280/f0f0f0/333?text=Hoka+Flip'" alt="Hoka Flip" />
+                    </div>
+                    <div class="zap-swatches">
+                        <span class="sw" style="background:#222;"></span>
+                        <span class="sw" style="background:#80c0d0;"></span>
+                    </div>
+                    <div class="zap-card-info">
+                        <p class="zap-brand">Hoka</p>
+                        <p class="zap-name">Ora Recovery Flip</p>
+                        <p class="zap-gender">Women's</p>
+                        <div class="zap-price-row">
+                            <span class="zap-price">$60</span>
+                        </div>
+                        <div class="zap-stars">
+                            ★★★★<span style="color:#ccc;">★</span>
+                            <span class="zap-reviews">(4,042)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.zap-product-row -->
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TOP PICKS PRODUCT CARDS (Image 12 style)
+    ═══════════════════════════════════════ -->
+    <section class="section-white py-5" style="border-top:1px solid #eee;">
+        <div class="container-xl">
+            <h2 class="zap-h2">Top Picks For You</h2>
+            <div class="zap-product-row">
+
+                <div class="zap-card">
+                    <div class="zap-card-img">
+                        <button class="zap-wish"><i class="far fa-heart"></i></button>
+                        <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x280/f0f0f0/333?text=Hoka+Bondi'" alt="Hoka Bondi" />
+                    </div>
+                    <div class="zap-swatches">
+                        <span class="sw active" style="background:#b0a0d0;"></span>
+                        <span class="sw" style="background:#c8b8e8;"></span>
+                        <span class="sw" style="background:#222;"></span>
+                        <span class="sw" style="background:#d0c8b8;"></span>
+                        <span class="sw" style="background:#fff;border:1px solid #ccc;"></span>
+                        <span class="sw-more">+19</span>
+                    </div>
+                    <div class="zap-card-info">
+                        <p class="zap-brand">Hoka</p>
+                        <p class="zap-name">Bondi 9</p>
+                        <p class="zap-gender">Women's</p>
+                        <div class="zap-price-row"><span class="zap-price">$175</span></div>
+                        <div class="zap-stars">★★★★<span style="color:#ccc;">★</span><span class="zap-reviews">(1,132)</span></div>
+                    </div>
+                </div>
+
+                <div class="zap-card">
+                    <div class="zap-card-img">
+                        <span class="zap-badge">Best Seller <span class="badge-slash">/</span></span>
+                        <button class="zap-wish"><i class="far fa-heart"></i></button>
+                        <img src="https://images.pexels.com/photos/1280064/pexels-photo-1280064.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x280/f0f0f0/333?text=New+Balance+327'" alt="New Balance 327" />
+                    </div>
+                    <div class="zap-swatches">
+                        <span class="sw active" style="background:#f0ece0;border:1px solid #ccc;"></span>
+                        <span class="sw" style="background:#606060;"></span>
+                        <span class="sw" style="background:#fff;border:1px solid #ccc;"></span>
+                        <span class="sw" style="background:#c0b8a8;"></span>
+                        <span class="sw" style="background:#809090;"></span>
+                        <span class="sw-more">+16</span>
+                    </div>
+                    <div class="zap-card-info">
+                        <p class="zap-brand">New Balance</p>
+                        <p class="zap-name">327</p>
+                        <p class="zap-gender">Women's</p>
+                        <div class="zap-price-row"><span class="zap-price">$104.95</span></div>
+                        <div class="zap-stars">★★★★<span style="color:#ccc;">★</span><span class="zap-reviews">(1,651)</span></div>
+                    </div>
+                </div>
+
+                <div class="zap-card">
+                    <div class="zap-card-img">
+                        <span class="zap-badge">Best Seller <span class="badge-slash">/</span></span>
+                        <button class="zap-wish"><i class="far fa-heart"></i></button>
+                        <img src="https://images.pexels.com/photos/1103828/pexels-photo-1103828.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x280/f0f0f0/333?text=Crocs+Classic'" alt="Crocs Classic" />
+                    </div>
+                    <div class="zap-swatches">
+                        <span class="sw" style="background:#404040;"></span>
+                        <span class="sw" style="background:#e0f0e0;border:1px solid #ccc;"></span>
+                        <span class="sw active" style="background:#604080;"></span>
+                        <span class="sw" style="background:#e8a0a0;"></span>
+                        <span class="sw" style="background:#804040;"></span>
+                        <span class="sw-more">+31</span>
+                    </div>
+                    <div class="zap-card-info">
+                        <p class="zap-brand">Crocs</p>
+                        <p class="zap-name">Classic Clog</p>
+                        <p class="zap-gender">Unisex</p>
+                        <div class="zap-price-row">
+                            <span class="zap-price sale-price">$34.18</span>
+                            <span class="zap-was">$49.99</span>
+                            <span class="zap-pct">32% OFF</span>
+                        </div>
+                        <div class="zap-stars">★★★★★<span class="zap-reviews">(36,724)</span></div>
+                    </div>
+                </div>
+
+                <div class="zap-card">
+                    <div class="zap-card-img">
+                        <button class="zap-wish"><i class="far fa-heart"></i></button>
+                        <img src="https://images.pexels.com/photos/1456705/pexels-photo-1456705.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x280/f0f0f0/333?text=New+Balance+Elite'" alt="New Balance Elite" />
+                    </div>
+                    <div class="zap-swatches">
+                        <span class="sw active" style="background:#606060;"></span>
+                        <span class="sw" style="background:#222;"></span>
+                        <span class="sw" style="background:#6090c0;"></span>
+                    </div>
+                    <div class="zap-card-info">
+                        <p class="zap-brand">New Balance</p>
+                        <p class="zap-name">Elite Lite</p>
+                        <p class="zap-gender">Women's</p>
+                        <div class="zap-price-row"><span class="zap-price">$149.99</span></div>
+                        <div class="zap-stars">★★★<span style="color:#ccc;">★★</span><span class="zap-reviews">(162)</span></div>
+                    </div>
+                </div>
+
+                <div class="zap-card">
+                    <div class="zap-card-img">
+                        <span class="zap-badge">Best Seller <span class="badge-slash">/</span></span>
+                        <button class="zap-wish"><i class="far fa-heart"></i></button>
+                        <img src="https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg?auto=compress&cs=tinysrgb&w=400"
+                             onerror="this.src='https://placehold.co/340x280/f0f0f0/333?text=Crocs+Kids'" alt="Crocs Kids" />
+                    </div>
+                    <div class="zap-swatches">
+                        <span class="sw" style="background:#c0c0c0;"></span>
+                        <span class="sw" style="background:#8060c0;"></span>
+                        <span class="sw active" style="background:#e08040;"></span>
+                        <span class="sw" style="background:#222;"></span>
+                        <span class="sw" style="background:#606060;"></span>
+                        <span class="sw-more">+25</span>
+                    </div>
+                    <div class="zap-card-info">
+                        <p class="zap-brand">Crocs</p>
+                        <p class="zap-name">Classic Clogs (Little Kid/Big Kid)</p>
+                        <p class="zap-gender">Kids</p>
+                        <div class="zap-price-row"><span class="zap-price">$39.99</span></div>
+                        <div class="zap-stars">★★★★★<span class="zap-reviews">(1,741)</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         IN MOTION SPLIT BANNER (Image 9)
+    ═══════════════════════════════════════ -->
+    <section class="split-banner">
+        <div class="split-half">
+            <img src="https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 onerror="this.src='https://placehold.co/800x400/1a1a1a/fff?text=In+Motion'" alt="In Motion Left" />
+        </div>
+        <div class="split-half split-right" style="background:#1a1a1a;">
+            <img src="https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 onerror="this.src='https://placehold.co/800x400/2a2a3a/fff?text=Community'" alt="In Motion Right" />
+            <div class="split-overlay-text">
+                <h2>KickAura <em>/ In Motion</em></h2>
+                <p>Movement connects us—explore expert picks, upcoming events &amp; communities redefining performance.</p>
+                <a href="#" class="btn-yellow-solid">DISCOVER MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         WAYS TO SHOP & SAVE (Image 13)
+    ═══════════════════════════════════════ -->
+    <section class="section-white py-5">
+        <div class="container-xl">
+            <h2 class="zap-h2">Ways to Shop &amp; Save</h2>
+            <div class="ways-grid">
+
+                <div class="ways-card">
+                    <div class="ways-text">
+                        <strong>KickAura App</strong>
+                        <p>Smooth shopping, fast checkouts &amp; easy order tracking.</p>
+                    </div>
+                    <a href="#" class="btn-ways">DOWNLOAD NOW</a>
+                </div>
+
+                <div class="ways-card">
+                    <div class="ways-text">
+                        <strong>Prime Account</strong>
+                        <p>Get 2x VIP points &amp; exclusive deals when linked.</p>
+                    </div>
+                    <a href="#" class="btn-ways">LINK NOW</a>
+                </div>
+
+                <div class="ways-card">
+                    <div class="ways-text">
+                        <strong>KickAura VIP</strong>
+                        <p>Earn rewards, special offers &amp; free expedited shipping.</p>
+                    </div>
+                    <a href="#" class="btn-ways">JOIN NOW</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         EMAIL SIGNUP – YELLOW (Image 13-14)
+    ═══════════════════════════════════════ -->
+    <section class="email-section">
+        <div class="container-xl">
+            <h2>Join Our Email List</h2>
+            <p>Never miss out on latest drops &amp; sales—plus, new subscribers get 10% off.*</p>
+            <div class="email-row">
+                <input type="email" placeholder="Email Address" />
+                <button>SIGN UP</button>
+            </div>
+            <small>*One code per email address.</small>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER (Image 14)
+    ═══════════════════════════════════════ -->
+    <footer class="site-footer">
+        <div class="container-xl">
+
+            <!-- Social -->
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-running"></i></a>
+            </div>
+
+            <!-- Link columns -->
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h6>About KickAura</h6>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Get the Mobile App</a>
+                    <a href="#">Prime Benefits</a>
+                    <a href="#">VIP Benefits</a>
+                    <a href="#">Coupons &amp; Sales</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Customer Service</h6>
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact Info</a>
+                    <a href="#">Ayuda en español</a>
+                    <a href="#">Shipping &amp; Returns Policy</a>
+                    <a href="#">About Proposition 65</a>
+                    <a href="#">Return Options</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Resources</h6>
+                    <a href="#">Size Conversion Chart</a>
+                    <a href="#">Affiliate Program</a>
+                    <a href="#">Site Map</a>
+                    <a href="#">Take Survey</a>
+                    <a href="#">E-Gift Cards</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Explore KickAura</h6>
+                    <a href="#">Brands</a>
+                    <a href="#">Clothing</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Running</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Adaptive</a>
+                    <a href="#">All Departments</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <span>© 2025 KickAura, Inc. All Rights Reserved.</span>
                 <div>
-                    <div class="section-label">Shop by Category</div>
-                    <h2 class="section-title">Find Your Style</h2>
-                </div>
-                <a href="#" class="view-all-link">View All →</a>
-            </div>
-            <div class="row g-3">
-                <div class="col-md-4">
-                    <a class="cat-card" href="#">
-                        <div class="cat-img-wrap" style="background:linear-gradient(135deg,#1a1a2e,#0f3460);">
-                            <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                 onerror="this.style.opacity='0'" alt="Men's Shoes" />
-                        </div>
-                        <div class="cat-overlay">
-                            <div class="cat-info"><h5>Men's</h5><span>240+ styles</span></div>
-                            <div class="cat-arrow"><i class="fas fa-arrow-right fa-sm"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a class="cat-card" href="#">
-                        <div class="cat-img-wrap" style="background:linear-gradient(135deg,#2d1b69,#7b2d8b);">
-                            <img src="https://images.pexels.com/photos/1007016/pexels-photo-1007016.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                 onerror="this.style.opacity='0'" alt="Women's Shoes" />
-                        </div>
-                        <div class="cat-overlay">
-                            <div class="cat-info"><h5>Women's</h5><span>310+ styles</span></div>
-                            <div class="cat-arrow"><i class="fas fa-arrow-right fa-sm"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a class="cat-card" href="#">
-                        <div class="cat-img-wrap" style="background:linear-gradient(135deg,#e8521a,#ff9a3c);">
-                            <img src="https://images.pexels.com/photos/1352985/pexels-photo-1352985.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                 onerror="this.style.opacity='0'" alt="Kids' Shoes" />
-                        </div>
-                        <div class="cat-overlay">
-                            <div class="cat-info"><h5>Kids'</h5><span>120+ styles</span></div>
-                            <div class="cat-arrow"><i class="fas fa-arrow-right fa-sm"></i></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- BEST SELLERS -->
-    <section class="section-pad bg-white">
-        <div class="container">
-            <div class="section-header">
-                <div>
-                    <div class="section-label">Trending Now</div>
-                    <h2 class="section-title">Best Sellers</h2>
-                    <p class="section-sub">Handpicked favourites flying off the shelves.</p>
-                </div>
-                <a href="#" class="view-all-link">Shop All →</a>
-            </div>
-            <div class="filter-tabs mb-4">
-                <button class="filter-btn active" onclick="setActive(this)">All</button>
-                <button class="filter-btn" onclick="setActive(this)">Nike</button>
-                <button class="filter-btn" onclick="setActive(this)">Adidas</button>
-                <button class="filter-btn" onclick="setActive(this)">Jordan</button>
-                <button class="filter-btn" onclick="setActive(this)">New Balance</button>
-                <button class="filter-btn" onclick="setActive(this)">Converse</button>
-            </div>
-            <div class="row g-4">
-
-                <div class="col-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-img-wrap">
-                            <span class="badge-tag badge-hot">🔥 Hot</span>
-                            <button class="wishlist-btn" onclick="toggleWish(this)"><i class="far fa-heart"></i></button>
-                            <div class="product-img-bg" style="background:#FFF3E8;">
-                                <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                     onerror="this.src='https://placehold.co/400x300/FFF3E8/E8521A?text=Nike+Air+Max'" alt="Nike" />
-                            </div>
-                            <div class="quick-view">Quick View</div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-brand">Nike</div>
-                            <div class="product-name">Air Max 270 React Eng</div>
-                            <div class="rating-row"><div class="stars">★★★★★</div><span class="review-count">(428)</span></div>
-                            <div class="color-dots">
-                                <div class="color-dot active" style="background:#1C1C1E;"></div>
-                                <div class="color-dot" style="background:#E8521A;"></div>
-                                <div class="color-dot" style="background:#3A5F8A;"></div>
-                                <div class="color-dot" style="background:#fff;border:2px solid #ddd;"></div>
-                            </div>
-                            <div class="price-wrap">
-                                <span class="price-now">$189.99</span>
-                                <span class="price-was">$229.99</span>
-                                <span class="price-save">17% OFF</span>
-                            </div>
-                            <button class="add-cart-btn" onclick="addToBag(this)">Add to Bag</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-img-wrap">
-                            <span class="badge-tag badge-new">New</span>
-                            <button class="wishlist-btn" onclick="toggleWish(this)"><i class="far fa-heart"></i></button>
-                            <div class="product-img-bg" style="background:#E8F5E9;">
-                                <img src="https://images.pexels.com/photos/1456705/pexels-photo-1456705.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                     onerror="this.src='https://placehold.co/400x300/E8F5E9/2D6A4F?text=Adidas'" alt="Adidas" />
-                            </div>
-                            <div class="quick-view">Quick View</div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-brand">Adidas</div>
-                            <div class="product-name">Ultraboost 23 Running</div>
-                            <div class="rating-row"><div class="stars">★★★★☆</div><span class="review-count">(312)</span></div>
-                            <div class="color-dots">
-                                <div class="color-dot active" style="background:#F5F0EA;border:2px solid #ccc;"></div>
-                                <div class="color-dot" style="background:#2D6A4F;"></div>
-                                <div class="color-dot" style="background:#222;"></div>
-                            </div>
-                            <div class="price-wrap"><span class="price-now">$219.99</span></div>
-                            <button class="add-cart-btn" onclick="addToBag(this)">Add to Bag</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-img-wrap">
-                            <span class="badge-tag badge-sale">Sale</span>
-                            <button class="wishlist-btn" onclick="toggleWish(this)"><i class="far fa-heart"></i></button>
-                            <div class="product-img-bg" style="background:#F0F4FF;">
-                                <img src="https://images.pexels.com/photos/1103828/pexels-photo-1103828.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                     onerror="this.src='https://placehold.co/400x300/F0F4FF/333?text=Converse'" alt="Converse" />
-                            </div>
-                            <div class="quick-view">Quick View</div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-brand">Converse</div>
-                            <div class="product-name">Chuck Taylor All Star Lift</div>
-                            <div class="rating-row"><div class="stars">★★★★★</div><span class="review-count">(874)</span></div>
-                            <div class="color-dots">
-                                <div class="color-dot active" style="background:#fff;border:2px solid #ddd;"></div>
-                                <div class="color-dot" style="background:#1C1C1E;"></div>
-                                <div class="color-dot" style="background:#8A3A3A;"></div>
-                            </div>
-                            <div class="price-wrap">
-                                <span class="price-now">$74.99</span>
-                                <span class="price-was">$109.99</span>
-                                <span class="price-save">32% OFF</span>
-                            </div>
-                            <button class="add-cart-btn" onclick="addToBag(this)">Add to Bag</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-img-wrap">
-                            <span class="badge-tag badge-new">New</span>
-                            <button class="wishlist-btn" onclick="toggleWish(this)"><i class="far fa-heart"></i></button>
-                            <div class="product-img-bg" style="background:#FFF8E1;">
-                                <img src="https://images.pexels.com/photos/1280064/pexels-photo-1280064.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                     onerror="this.src='https://placehold.co/400x300/FFF8E1/333?text=New+Balance'" alt="New Balance" />
-                            </div>
-                            <div class="quick-view">Quick View</div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-brand">New Balance</div>
-                            <div class="product-name">990v6 Made in USA</div>
-                            <div class="rating-row"><div class="stars">★★★★★</div><span class="review-count">(196)</span></div>
-                            <div class="color-dots">
-                                <div class="color-dot active" style="background:#9E9E9E;"></div>
-                                <div class="color-dot" style="background:#4A6741;"></div>
-                                <div class="color-dot" style="background:#5C4A7A;"></div>
-                            </div>
-                            <div class="price-wrap"><span class="price-now">$244.99</span></div>
-                            <button class="add-cart-btn" onclick="addToBag(this)">Add to Bag</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- SALE BANNER -->
-    <section class="banner-strip">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-7">
-                    <div class="banner-eyebrow">Limited Time Offer</div>
-                    <h2>Up to <span class="highlight">50% Off</span><br>Summer Favourites</h2>
-                    <p>Limited time · Limited sizes · Don't wait</p>
-                </div>
-                <div class="col-md-5 text-md-end mt-4 mt-md-0">
-                    <a href="#" class="btn-white">Shop the Sale →</a>
-                    <div class="countdown mt-3">
-                        <div class="cd-box"><span id="cd-h">08</span><small>HRS</small></div>
-                        <div class="cd-box"><span id="cd-m">42</span><small>MIN</small></div>
-                        <div class="cd-box"><span id="cd-s">17</span><small>SEC</small></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- NEW ARRIVALS -->
-    <section class="section-pad bg-cream">
-        <div class="container">
-            <div class="section-header">
-                <div>
-                    <div class="section-label">Fresh In</div>
-                    <h2 class="section-title">New Arrivals</h2>
-                    <p class="section-sub">The latest drops, curated just for you.</p>
-                </div>
-                <a href="#" class="view-all-link">See All →</a>
-            </div>
-            <div class="row g-4">
-
-                <div class="col-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-img-wrap">
-                            <span class="badge-tag badge-new">Just Dropped</span>
-                            <button class="wishlist-btn" onclick="toggleWish(this)"><i class="far fa-heart"></i></button>
-                            <div class="product-img-bg" style="background:#FDECEA;">
-                                <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                     onerror="this.src='https://placehold.co/400x300/FDECEA/E8521A?text=Vans'" alt="Vans" />
-                            </div>
-                            <div class="quick-view">Quick View</div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-brand">Vans</div>
-                            <div class="product-name">Old Skool Premium Suede</div>
-                            <div class="price-wrap"><span class="price-now">$94.99</span></div>
-                            <button class="add-cart-btn" onclick="addToBag(this)">Add to Bag</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-img-wrap">
-                            <button class="wishlist-btn" onclick="toggleWish(this)"><i class="far fa-heart"></i></button>
-                            <div class="product-img-bg" style="background:#E3F2FD;">
-                                <img src="https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                     onerror="this.src='https://placehold.co/400x300/E3F2FD/1565C0?text=Puma'" alt="Puma" />
-                            </div>
-                            <div class="quick-view">Quick View</div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-brand">Puma</div>
-                            <div class="product-name">Suede Classic XXI Sneaker</div>
-                            <div class="price-wrap">
-                                <span class="price-now">$79.99</span>
-                                <span class="price-was">$99.99</span>
-                            </div>
-                            <button class="add-cart-btn" onclick="addToBag(this)">Add to Bag</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-img-wrap">
-                            <span class="badge-tag badge-hot">Limited</span>
-                            <button class="wishlist-btn" onclick="toggleWish(this)"><i class="far fa-heart"></i></button>
-                            <div class="product-img-bg" style="background:#F3E5F5;">
-                                <img src="https://images.pexels.com/photos/1580283/pexels-photo-1580283.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                     onerror="this.src='https://placehold.co/400x300/F3E5F5/7B1FA2?text=Reebok'" alt="Reebok" />
-                            </div>
-                            <div class="quick-view">Quick View</div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-brand">Reebok</div>
-                            <div class="product-name">Classic Leather Legacy AZ</div>
-                            <div class="price-wrap"><span class="price-now">$109.99</span></div>
-                            <button class="add-cart-btn" onclick="addToBag(this)">Add to Bag</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-img-wrap">
-                            <span class="badge-tag badge-new">New</span>
-                            <button class="wishlist-btn" onclick="toggleWish(this)"><i class="far fa-heart"></i></button>
-                            <div class="product-img-bg" style="background:#E8F5E9;">
-                                <img src="https://images.pexels.com/photos/1070058/pexels-photo-1070058.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                     onerror="this.src='https://placehold.co/400x300/E8F5E9/1B5E20?text=Jordan'" alt="Jordan" />
-                            </div>
-                            <div class="quick-view">Quick View</div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-brand">Jordan</div>
-                            <div class="product-name">Air Jordan 1 Retro High OG</div>
-                            <div class="price-wrap"><span class="price-now">$179.99</span></div>
-                            <button class="add-cart-btn" onclick="addToBag(this)">Add to Bag</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- BRANDS -->
-    <section class="section-pad bg-white">
-        <div class="container">
-            <div class="text-center mb-5">
-                <div class="section-label">Our Partners</div>
-                <h2 class="section-title">Top Brands</h2>
-            </div>
-            <div class="brands-grid">
-                <div class="brand-item">Nike</div>
-                <div class="brand-item">Adidas</div>
-                <div class="brand-item">Jordan</div>
-                <div class="brand-item">New Balance</div>
-                <div class="brand-item">Converse</div>
-                <div class="brand-item">Vans</div>
-                <div class="brand-item">Puma</div>
-                <div class="brand-item">Reebok</div>
-            </div>
-        </div>
-    </section>
-    <!-- TESTIMONIALS -->
-    <section class="section-pad bg-cream">
-        <div class="container">
-            <div class="text-center mb-5">
-                <div class="section-label">Happy Customers</div>
-                <h2 class="section-title">What People Are Saying</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <div class="stars large mb-3">★★★★★</div>
-                        <p>"Hands down the best shoe shopping experience I've had online. Arrived in 2 days, fit perfectly. Will be a repeat customer!"</p>
-                        <div class="testi-author">
-                            <div class="testi-avatar-placeholder">AR</div>
-                            <div><div class="testi-name">Ayesha Raza</div><div class="testi-role">Verified Buyer · Lahore</div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card featured">
-                        <div class="stars large mb-3">★★★★★</div>
-                        <p>"The return process was shockingly easy. Ordered two sizes, returned one with zero hassle. Amazing selection too!"</p>
-                        <div class="testi-author">
-                            <div class="testi-avatar-placeholder">BA</div>
-                            <div><div class="testi-name">Bilal Ahmed</div><div class="testi-role">Verified Buyer · Karachi</div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <div class="stars large mb-3">★★★★★</div>
-                        <p>"Got the Nike Ultras on sale for 30% off. Packaging was immaculate, support was super helpful. Highly recommend STRYDE!"</p>
-                        <div class="testi-author">
-                            <div class="testi-avatar-placeholder">SK</div>
-                            <div><div class="testi-name">Sara Khan</div><div class="testi-role">Verified Buyer · Islamabad</div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- NEWSLETTER -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <div class="section-label" style="color:#FF6B35;">Exclusive Access</div>
-                    <h2>Stay Ahead of the Drop</h2>
-                    <p>Get early access to new releases, exclusive deals & style inspo.</p>
-                    <div class="newsletter-perks mt-3">
-                        <span>✓ Early access</span>
-                        <span>✓ Members-only deals</span>
-                        <span>✓ No spam ever</span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="email-input-wrap">
-                        <input class="email-input" type="email" placeholder="Enter your email address" />
-                        <button class="btn-subscribe">Subscribe</button>
-                    </div>
-                    <p style="font-size:0.75rem;color:#555;margin-top:0.7rem;">Join 50,000+ sneaker lovers. Unsubscribe any time.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="footer-brand">STRY<span>DE</span></div>
-                    <p class="footer-desc">Premium footwear for every journey. Crafted for comfort. Designed for life.</p>
-                    <div class="social-links mt-3">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-                <div class="col-6 col-md-2">
-                    <h6>Shop</h6>
-                    <a href="#">Men's Shoes</a><a href="#">Women's Shoes</a>
-                    <a href="#">Kids' Shoes</a><a href="#">Sale</a><a href="#">New Arrivals</a>
-                </div>
-                <div class="col-6 col-md-2">
-                    <h6>Brands</h6>
-                    <a href="#">Nike</a><a href="#">Adidas</a>
-                    <a href="#">New Balance</a><a href="#">Converse</a><a href="#">Jordan</a>
-                </div>
-                <div class="col-6 col-md-2">
-                    <h6>Help</h6>
-                    <a href="#">Track My Order</a><a href="#">Returns & Exchanges</a>
-                    <a href="#">Sizing Guide</a><a href="#">FAQs</a><a href="#">Contact Us</a>
-                </div>
-                <div class="col-6 col-md-2">
-                    <h6>Company</h6>
-                    <a href="#">About Us</a><a href="#">Careers</a>
-                    <a href="#">Blog</a><a href="#">Sustainability</a><a href="#">Press</a>
-                </div>
-            </div>
-            <div class="footer-payments mt-4">
-                <span>We Accept:</span>
-                <div class="payment-icons">
-                    <span class="pay-icon">VISA</span>
-                    <span class="pay-icon">MC</span>
-                    <span class="pay-icon">AMEX</span>
-                    <span class="pay-icon">PayPal</span>
-                    <span class="pay-icon">Apple Pay</span>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>© 2025 STRYDE. All rights reserved.</span>
-                <div class="d-flex gap-3 flex-wrap">
                     <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Settings</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
                 </div>
             </div>
+
         </div>
     </footer>
+
     <!-- TOAST -->
-    <div class="toast-msg" id="toastMsg">🛍️ Added to your bag!</div>
+    <div class="zap-toast" id="zapToast">❤️ Added to Wishlist</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script>
-        function toggleWish(btn) {
-            const i = btn.querySelector('i');
-            i.classList.toggle('far');
-            i.classList.toggle('fas');
-            btn.classList.toggle('wished');
-        }
+        // Wishlist
+        document.querySelectorAll('.zap-wish').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                const i = this.querySelector('i');
+                i.classList.toggle('far');
+                i.classList.toggle('fas');
+                this.classList.toggle('wished');
+                const toast = document.getElementById('zapToast');
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2000);
+            });
+        });
 
-        function addToBag(btn) {
-            btn.textContent = '✓ Added!';
-            btn.style.background = '#2D6A4F';
-            btn.disabled = true;
-            const toast = document.getElementById('toastMsg');
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2500);
-            setTimeout(() => { btn.textContent = 'Add to Bag'; btn.style.background = ''; btn.disabled = false; }, 2000);
-        }
-
-        function setActive(el) {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            el.classList.add('active');
-        }
-
-        document.querySelectorAll('.color-dot').forEach(dot => {
-            dot.addEventListener('click', function () {
-                this.closest('.color-dots').querySelectorAll('.color-dot').forEach(d => d.classList.remove('active'));
+        // Swatch selection
+        document.querySelectorAll('.sw').forEach(sw => {
+            sw.addEventListener('click', function () {
+                this.closest('.zap-swatches').querySelectorAll('.sw').forEach(s => s.classList.remove('active'));
                 this.classList.add('active');
             });
         });
-        // Live countdown
-        (function () {
-            let h = 8, m = 42, s = 17;
-            setInterval(() => {
-                s--; if (s < 0) { s = 59; m--; } if (m < 0) { m = 59; h--; } if (h < 0) h = 23;
-                document.getElementById('cd-h').textContent = String(h).padStart(2, '0');
-                document.getElementById('cd-m').textContent = String(m).padStart(2, '0');
-                document.getElementById('cd-s').textContent = String(s).padStart(2, '0');
-            }, 1000);
-        })();
     </script>
-</body >
-</html >
+</body>
+</html>
